@@ -1,14 +1,13 @@
 """
-Error Handler - Self-Healing System
-Detects and fixes problems automatically
+Coding Hustler Agent - Main Entry Point
 """
 
+import sys
+import argparse
+from agent.config import Config
 from agent.logger import setup_logger
+from agent.orchestrator import orchestrator
 from agent.database import db
-
-logger = setup_logger(__name__)
-
-
 class ErrorHandler:
     """Handles errors and attempts automatic fixes"""
     
