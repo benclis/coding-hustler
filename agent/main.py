@@ -8,6 +8,7 @@ from agent.database import db
 
 logger = setup_logger(__name__)
 
+
 class ErrorHandler:
     """Handles errors and attempts automatic fixes"""
     
@@ -80,6 +81,6 @@ class ErrorHandler:
         logger.info("  ✅ Using cached metrics")
         return True
 
+
 # Create global instance
 error_handler = ErrorHandler()
-```
